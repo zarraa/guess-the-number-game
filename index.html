@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>guess my number</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yomogi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>Guess my number 😋!!</h1>
+      <button class="againBtn" onclick="window.location.reload();">
+        Again
+      </button>
+      <p class="Counter">(Choose a number between 1 - 20)</p>
+    </header>
+
+    <!-- hr line  -->
+
+    <div class="boxNum">
+      <hr />
+      <div class="qMark">?</div>
+    </div>
+
+    <!-- score and input section -->
+
+    <main>
+      <section class="left">
+        <input id="inputNum" type="number" placeholder="0" />
+        <button class="checkBtn" onclick="getval();">check</button>
+      </section>
+
+      <section class="right">
+        <p id="message">Start...</p>
+        <p id="label-score">🏆Score: <span class="score">20</span></p>
+        <p id="label-highscore">🥉 hightScore:</p>
+      </section>
+    </main>
+    <!-- script link file -->
+    <script src="index.js"></script>
+  </body>
+</html>
