@@ -54,8 +54,7 @@ function getval() {
       ).innerHTML = `🥉 hightScore: ${hightScore}`);
     }
 
-    // reload finction
-    reloadFun();
+    
   }
 
   if (counter <= 0) {
@@ -76,12 +75,3 @@ var stylesLoss = {
   color: "#fff",
 };
 
-function reloadFun() {
-  t = setTimeout(reloadGame, 1000);
-  document.querySelector(".Counter").innerHTML = reloadGame;
-
-  if (reloadGame == 5) {
-    window.location.reload();
-    // alert("time out!!!");
-  }
-}
